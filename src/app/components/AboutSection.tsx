@@ -9,7 +9,7 @@ export function AboutSection() {
           About Me
         </h2>
         <div className="flex justify-center items-center">
-          <p className="mx-auto text-gray-300 text-center mt-4 break-keep">
+          <p className="border-t border-b py-5 mx-auto text-gray-300 text-center text-base mt-4 break-keep max-w-[800px]">
             현상을 단순히 받아들이기보다 원인을 분석하고 구조를 파악하는 데 집중해 왔습니다.<br/>
             새로운 환경에 빠르게 적응하며, 낯선 기술도 금세 익혀 실무에 적용하는 실행력을 갖추고 있습니다.<br/>
             비전공자 출신이지만, AI 데이터 분석 기반 풀스택 웹 개발 과정을 통해 개발 전반을 직접 수행했고,<br/>
