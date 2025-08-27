@@ -19,7 +19,7 @@ export function ContactSection() {
           <textarea id="message" rows={4} className="bg-gray-800 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="내용을 입력하세요..." required></textarea>
         </div>
         <div className="text-center">
-          <button type="submit" className="text-white bg-blue-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 font-medium rounded-full text-sm p-3 text-center transition duration-300 cursor-pointer shadow-lg">메시지 보내기</button>
+          <button type="submit" className="text-white bg-blue-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 font-medium rounded-lg text-sm p-3 text-center transition duration-300 cursor-pointer shadow-lg">SEND</button>
         </div>
       </form>
     </section>
