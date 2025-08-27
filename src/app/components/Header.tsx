@@ -13,7 +13,7 @@ export function Header() {
           className="text-lg font-medium transition-colors hover:text-gray-400"
           href="#"
         >
-          SANGHEYON RYU
+          S.H.RYU
         </a>
         
         {/* Desktop Nav */}
