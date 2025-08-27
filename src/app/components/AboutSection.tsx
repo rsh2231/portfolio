@@ -1,22 +1,25 @@
 import { Cake, GraduationCap, House, Mail, Phone, UserRound } from "lucide-react";
-import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
-      <div className="container mx-auto px-4 md:px-6">
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">
-          About Me
-        </h1>
-        <div className="flex justify-center items-center">
-          <p className=" py-5 px-5 rounded-xl mx-auto text-center text-base mt-4 break-keep max-w-[800px]">
-            현상을 단순히 받아들이기보다 원인을 분석하고 구조를 파악하는 데 집중해 왔습니다.<br />
-            새로운 환경에 빠르게 적응하며, 낯선 기술도 금세 익혀 실무에 적용하는 실행력을 갖추고 있습니다.<br />
-            비전공자 출신이지만, AI 데이터 분석 기반 풀스택 웹 개발 과정을 통해 개발 전반을 직접 수행했고,<br />
-            그 경험이 웹 개발에 대한 흥미와 확신으로 이어졌습니다.<br />
-            기능 구현을 넘어, 사용자 관점에서 문제를 해석하고 주도적으로 개선하려는 태도를 지향합니다.<br />
-            작은 불편도 놓치지 않는 섬세함과 끈기를 바탕으로, 협업을 통해 함께 성장하는 개발 문화를 실천하고 있습니다.
-          </p>
+    <section
+      id="about"
+      className="w-full py-12 md:py-24 lg:py-32 relative"
+      style={{
+        backgroundImage: 'url(/images/bg1.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      <div className="absolute inset-0 bg-black opacity-85"></div>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="flex flex-col justify-center items-center break-keep">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-blue-400 mb-4">창의적인 솔루션으로</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-8 gradient-text">세상을 코딩합니다.</h1>
+          <p className="text-center text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+            안녕하세요, 사용자 중심의 인터랙티브 웹을 만드는<br /> 
+            프론트엔드 개발자 <strong className="text-blue-400 text-3xl">류상현</strong>입니다.</p>
         </div>
         <div className="mt-5">
           <div className="max-w-[800px] mx-auto p-8">

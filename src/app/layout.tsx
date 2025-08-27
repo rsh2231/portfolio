@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Metadata } from "next/dist/types";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollToTopButton from "./components/ScrollToTopButton";
