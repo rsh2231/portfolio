@@ -3,6 +3,7 @@ import {
   SiReact,
   SiNextdotjs,
   SiTypescript,
+  SiTailwindcss,
   SiHtml5,
   SiCss3,
 } from "react-icons/si";
