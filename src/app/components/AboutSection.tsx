@@ -48,7 +48,7 @@ export function AboutSection() {
             {/* Personal Details Card */}
             <div className="relative z-20 bg-gray-700 rounded-lg shadow-lg p-8 flex flex-col gap-8 w-11/12 md:w-3/4 lg:w-2/3 mt-4 ml-auto">
               {/* Profile */}
-              <h3 className="text-2xl font-bold mb-4 border-b pb-4">Profile</h3>
+              <h3 className="text-3xl font-bold mb-4 border-b pb-4">Profile</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg text-center break-keep w-full mb-12">
                 <p className="flex items-center justify-center md:justify-start gap-2">
                   <UserRound className="w-5 h-5 text-blue-400" /> 류상현
@@ -72,8 +72,8 @@ export function AboutSection() {
 
 
               {/* Skills */}
-              <h3 className="text-2xl font-bold mb-4 border-b pb-4">Skills</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-items-center">
+              <h3 className="text-3xl font-bold mb-4 border-b pb-4">Skills</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-items-start">
                 {skills.map((skill) => {
                   const Icon = skill.icon;
                   return (
