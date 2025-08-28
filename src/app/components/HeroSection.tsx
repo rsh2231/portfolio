@@ -6,7 +6,7 @@ export function HeroSection() {
       id="hero"
       className="w-full h-screen py-12 md:py-24 lg:py-32 relative"
       style={{
-        backgroundImage: `url(portfolio/images/bg2.jpg)`,
+                backgroundImage: `url(/portfolio/images/bg2.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

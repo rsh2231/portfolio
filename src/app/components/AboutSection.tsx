@@ -58,7 +58,7 @@ export function AboutSection() {
               <div className="flex flex-col gap-8">
                 {/* Personal Details */}
                 <h3 className="text-2xl font-bold mb-4 border-b pb-4">Introduce</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg text-center break-keep w-full mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg text-center break-keep w-full mb-12 justify-center">
                   <p className="flex items-center justify-center md:justify-start gap-2">
                     <UserRound className="w-5 h-5 text-blue-400" /> 류상현
                   </p>
