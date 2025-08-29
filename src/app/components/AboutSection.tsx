@@ -26,13 +26,13 @@ export function AboutSection() {
       id="about"
       className="w-full py-12 md:py-24 lg:py-32 relative"
     >
-      <div className="container mx-auto px-4 md:px-6 relative z-10 p-10 w-10/12">
+      <div className="container mx-auto px-4 md:px-6 relative z-10 p-10 w-full md:w-10/12">
       {/* About Card */}
         <div
-          className="relative z-10 mb-[-50px] bg-gray-700 rounded-lg shadow-lg p-8 text-lg text-left break-keep space-y-2 w-11/12 md:w-3/4 lg:w-2/3"
+          className="relative z-10 mb-8 md:mb-[-50px] bg-gray-700 rounded-lg shadow-lg p-8 text-lg text-left break-keep space-y-2 w-full md:w-3/4 lg:w-2/3"
         >
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-left mb-10">
-            About Me
+            About
           </h2>
           <p>현상을 단순히 받아들이기보다 원인을 분석하고 구조를 파악하는 데 집중해 왔습니다.</p>
           <p>새로운 환경에 빠르게 적응하며, 낯선 기술도 금세 익혀 실무에 적용하는 실행력을 갖추고 있습니다.</p>
@@ -43,29 +43,29 @@ export function AboutSection() {
         </div>
 
 
-        <div className="mt-20">
-          <div className="mx-auto p-8 relative flex flex-col items-center justify-end w-full">
+        <div className="md:mt-20">
+          <div className="mx-auto p-0 md:p-8 relative flex flex-col items-center md:items-end justify-end w-full">
             {/* Personal Details Card */}
-            <div className="relative z-20 bg-gray-700 rounded-lg shadow-lg p-8 flex flex-col gap-8 w-11/12 md:w-3/4 lg:w-2/3 mt-4 ml-auto">
+            <div className="relative z-20 bg-gray-700 rounded-lg shadow-lg p-8 flex flex-col gap-8 w-full md:w-3/4 lg:w-2/3 mt-4 md:ml-auto">
               {/* Profile */}
               <h3 className="text-3xl font-bold mb-4 border-b pb-4">Profile</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg text-center break-keep w-full mb-12">
-                <p className="flex items-center justify-center md:justify-start gap-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg break-keep w-full mb-12">
+                <p className="flex items-center justify-start gap-2">
                   <UserRound className="w-5 h-5 text-blue-400" /> 류상현
                 </p>
-                <p className="flex items-center justify-center md:justify-start gap-2">
+                <p className="flex items-center justify-start gap-2">
                   <Cake className="w-5 h-5 text-blue-400" /> 1991.11.28.
                 </p>
-                <p className="flex items-center justify-center md:justify-start gap-2">
+                <p className="flex items-center justify-start gap-2">
                   <House className="w-5 h-5 text-blue-400" /> 경상남도 김해시
                 </p>
-                <p className="flex items-center justify-center md:justify-start gap-2">
+                <p className="flex items-center justify-start gap-2">
                   <Mail className="w-5 h-5 text-blue-400" /> rsh2231@naver.com
                 </p>
-                <p className="flex items-center justify-center md:justify-start gap-2">
+                <p className="flex items-center justify-start gap-2">
                   <Phone className="w-5 h-5 text-blue-400" /> 010-5276-1739
                 </p>
-                <p className="flex items-center justify-center md:justify-start gap-2 text-sm">
+                <p className="flex items-center justify-start gap-2 text-sm">
                   <GraduationCap className="w-5 h-5 text-blue-400" /> 동의대학교대학원<br />(평생교육학과, 석사 졸업)
                 </p>
               </div>
@@ -73,18 +73,18 @@ export function AboutSection() {
 
               {/* Skills */}
               <h3 className="text-3xl font-bold mb-4 border-b pb-4">Skills</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-items-start">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                 {skills.map((skill) => {
                   const Icon = skill.icon;
                   return (
                     <div
                       key={skill.name}
-                      className="p-4 text-center flex flex-col items-center justify-start"
+                      className="flex flex-col items-center justify-center p-4 rounded-lg transition-all duration-300"
                     >
-                      <div className="mb-2">
-                        <Icon size={20} style={{ color: skill.color }} />
+                      <div className="mb-3">
+                        <Icon size={40} style={{ color: skill.color }} />
                       </div>
-                      <h3 className="text-lg font-bold">{skill.name}</h3>
+                      <h3 className="text-md font-semibold text-white text-center">{skill.name}</h3>
                     </div>
                   );
                 })}

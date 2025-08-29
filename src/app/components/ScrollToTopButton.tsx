@@ -31,7 +31,7 @@ export default function ScrollToTopButton() {
   }, []);
 
   return (
-    <div className="fixed bottom-5 right-5">
+    <div className="fixed bottom-5 right-5 z-50">
       <button
         onClick={scrollToTop}
         className={`p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-opacity duration-300 ${
